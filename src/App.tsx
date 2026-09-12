@@ -8,6 +8,7 @@ import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import TechGrid from "./components/TechGrid";
 import YourStack from "./components/YourStack";
+import Footer from "./components/Footer";
 
 function App() {
   const [technologies, setTechnologies] = useState<Technology[]>([]);
@@ -77,7 +78,7 @@ function App() {
       </section>
 
       <ToastContainer position="top-right" />
-      
+      <Footer></Footer>
     </>
   );
 }
