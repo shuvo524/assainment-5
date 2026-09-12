@@ -16,7 +16,7 @@ function StackItem({ tech, onRemove }: StackItemProps) {
         </div>
       </div>
 
-      <button onClick={() => onRemove(tech.id)} className="text-gray-400">
+      <button onClick={() => onRemove(tech.id)} className="text-gray-400 cursor-pointer">
         ✕
       </button>
     </div>

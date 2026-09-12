@@ -31,7 +31,7 @@ function TechCard({ tech, isAdded, onAdd }: TechCardProps) {
       <p className="text-gray-500 text-sm">{tech.description}</p>
 
       <div className="flex items-center justify-between text-sm">
-        <span className="bg-blue-50 text-blue-600 px-3 py-1 rounded-full">
+        <span className={`${colorMap[tech.badgeColor]} px-3 py-1 rounded-full`}>
           {tech.category}
         </span>
         <span className="text-gray-500">{tech.difficulty}</span>
