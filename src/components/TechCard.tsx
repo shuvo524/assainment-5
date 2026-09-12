@@ -6,12 +6,23 @@ interface TechCardProps {
   onAdd: (tech: Technology) => void;
 }
 
+const colorMap: Record<string, string> = {
+  sky: "bg-sky-50 text-sky-600",
+  green: "bg-green-50 text-green-600",
+  blue: "bg-blue-50 text-blue-600",
+  gray: "bg-gray-100 text-gray-600",
+  cyan: "bg-cyan-50 text-cyan-600",
+  orange: "bg-orange-50 text-orange-600",
+  yellow: "bg-yellow-50 text-yellow-700",
+  red: "bg-red-50 text-red-600",
+};
+
 function TechCard({ tech, isAdded, onAdd }: TechCardProps) {
   return (
     <div className="border border-gray-100 shadow-sm rounded-xl p-5 flex flex-col gap-3">
       <div className="flex items-center justify-between">
         <img src={tech.icon} alt={tech.name} className="w-10 h-10" />
-        <span className="bg-gray-100 text-gray-600 px-3 py-1 rounded-full text-xs">
+        <span className={`${colorMap[tech.badgeColor]} px-3 py-1 rounded-full text-xs`}>
           {tech.badge}
         </span>
       </div>
