@@ -2,10 +2,10 @@ import logo from "../assets/logo-text.png";
 
 function Footer() {
   return (
-    <footer className="border-t">
+    <footer className="border-t border-gray-200">
       <div className="max-w-7xl mx-auto px-4 md:px-8 py-12 grid grid-cols-1 md:grid-cols-4 gap-8">
         <div>
-          <img src={logo} alt="Dev Stack" className="h-8 mb-3" />
+          <img src={logo} alt="Dev Stack" className="h-8 mb-3 cursor-pointer" />
           <p className="text-gray-500 text-sm">
             Curated tools, technologies, and resources for developers
             building modern software.
@@ -44,7 +44,7 @@ function Footer() {
         </div>
       </div>
 
-      <div className="border-t px-4 md:px-8 py-4 flex flex-col md:flex-row items-center justify-between text-sm text-gray-500 max-w-7xl mx-auto">
+      <div className="border-t border-gray-200 px-4 md:px-8 py-4 flex flex-col md:flex-row items-center justify-between text-sm text-gray-500 max-w-7xl mx-auto gap-2">
         <p>© 2026 Dev Stack. All rights reserved.</p>
         <div className="flex gap-4">
           <a href="#" className="hover:text-pink-500">Privacy</a>
