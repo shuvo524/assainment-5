@@ -2,9 +2,6 @@
 
 🔗 **Live Site:** https://dev-stack-react-web.netlify.app/
 
-A React + TypeScript web application...
-
-# Dev Stack Builder
 
 A React + TypeScript web application where developers can explore popular web development technologies, compare them, and build their own personalized tech stack by adding tools to a selection panel.
 
